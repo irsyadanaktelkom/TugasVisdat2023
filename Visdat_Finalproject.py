@@ -34,7 +34,7 @@ color_mapper = CategoricalColorMapper(factors=data['Country'].unique(), palette=
 line_color = factor_cmap(field_name='Country', palette=Category10[10], factors=data['Country'].unique())
 
 # Add a line glyph for each country
-p.multi_line(xs='Year', ys='No of people living with HIV', source=source, line_width=2, line_color=line_color)
+p.multi_line(xs='Year', ys='Count', source=source, line_width=2, line_color=line_color)
 
 # Define the callback function to update the plot based on user inputs
 def update():
