@@ -15,7 +15,7 @@ from bokeh.transform import factor_cmap
 import streamlit as st
 
 # Load the dataset
-data = pd.read_csv('./no_of_people_living_with_hiv_by_country_clean.csv')
+data = pd.read_csv('no_of_people_living_with_hiv_by_country_clean.csv')
 data['Year'] = data['Year'].astype(str)  # Convert Year column to string type
 
 # Convert 'Year' column to integer type
